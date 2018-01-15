@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="633.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dict.FXMLDocumentController">
+  <tabs>
+    <Tab text="AVLTREE">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane layoutX="40.0" layoutY="-24.0" prefHeight="505.0" prefWidth="633.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="Insert" layoutX="48.0" layoutY="75.0" mnemonicParsing="false" onAction="#InsertToAVL" prefHeight="25.0" prefWidth="121.0" text="Insert" />
+                        <Button fx:id="deleteAVLNode" layoutX="48.0" layoutY="119.0" mnemonicParsing="false" onAction="#AVLNodeDel" prefHeight="25.0" prefWidth="125.0" text="Delete Word" />
+                        <TextField fx:id="AVLInsertLbl" layoutX="231.0" layoutY="75.0" />
+                        <TextField fx:id="DelWordLbl" layoutX="231.0" layoutY="119.0" />
+                        <Label fx:id="AVLTree" layoutX="231.0" layoutY="289.0" prefHeight="153.0" prefWidth="305.0" />
+                        <Button fx:id="printTree" layoutX="45.0" layoutY="289.0" mnemonicParsing="false" onAction="#PrtintTree" prefHeight="25.0" prefWidth="127.0" text="Print Tree" />
+                        <Button fx:id="DelByCha" layoutX="40.0" layoutY="165.0" mnemonicParsing="false" onAction="#DeleteByCh" prefHeight="25.0" prefWidth="137.0" text="Delete By Char" />
+                        <TextField fx:id="dletteeeeeeee" layoutX="231.0" layoutY="165.0" />
+                     </children>
+                  </AnchorPane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Hash Table">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane layoutX="23.0" layoutY="14.0" prefHeight="505.0" prefWidth="633.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button layoutX="39.0" layoutY="36.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="285.0" text="Hash Function  : Qudartic" />
+                        <Button fx:id="HSize" layoutX="39.0" layoutY="76.0" mnemonicParsing="false" onAction="#HSize" prefHeight="25.0" prefWidth="152.0" text="Hash Size" />
+                        <Button fx:id="HInsert" layoutX="39.0" layoutY="116.0" mnemonicParsing="false" onAction="#InsertH" prefHeight="25.0" prefWidth="152.0" text="Insert" />
+                        <Button fx:id="SearchHH" layoutX="39.0" layoutY="160.0" mnemonicParsing="false" onAction="#HSearch" prefHeight="25.0" prefWidth="152.0" text="Search" />
+                        <Button fx:id="HDel" layoutX="39.0" layoutY="207.0" mnemonicParsing="false" onAction="#HashDel" prefHeight="25.0" prefWidth="152.0" text="Delete" />
+                        <Button fx:id="HPrint" layoutX="39.0" layoutY="253.0" mnemonicParsing="false" onAction="#PrintHash" prefHeight="25.0" prefWidth="152.0" text="Print" />
+                        <Label fx:id="size" layoutX="249.0" layoutY="81.0" prefHeight="15.0" prefWidth="142.0" />
+                        <Label fx:id="DisplayHash" layoutX="225.0" layoutY="258.0" prefHeight="223.0" prefWidth="301.0" />
+                        <TextField fx:id="HashInsert" layoutX="231.0" layoutY="116.0" />
+                        <TextField fx:id="Hashser" layoutX="231.0" layoutY="166.0" />
+                        <TextField fx:id="HashDel" layoutX="231.0" layoutY="207.0" />
+                     </children></AnchorPane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
